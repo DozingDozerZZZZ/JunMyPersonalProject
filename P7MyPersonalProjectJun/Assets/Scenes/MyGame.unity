@@ -581,11 +581,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpForce: 10
-  gravityModifer: 1
-  isOnGround: 1
+  gravityModifer: 2
   gameOver: 0
-  doubleJumpUsed: 0
-  doubleJumpForce: 10
 --- !u!54 &1612752552
 Rigidbody:
   m_ObjectHideFlags: 0
