@@ -6,8 +6,9 @@ public class PlayerController : MonoBehaviour
     public float jumpForce = 10f;
     public float gravityModifer;
     public bool gameOver = false;
+    public bool isOnGround = true;
 
-   
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -19,11 +20,17 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space) && !gameOver)
+        if(Input.GetKeyDown(KeyCode.Space) && isOnGround)
         {  
             playerRb.AddForce(Vector3.up *jumpForce,ForceMode.Impulse);
-          
+            isOnGround = false;
+
         }
        
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        isOnGround = true;
     }
 }
