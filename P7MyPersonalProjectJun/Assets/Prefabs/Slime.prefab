@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 4295358634778414609}
   - component: {fileID: 2281040925167117010}
   - component: {fileID: 1916257951512706654}
-  - component: {fileID: -3909046974736825146}
   m_Layer: 0
   m_Name: Slime
   m_TagString: Obstacle
@@ -133,7 +132,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4714674720557699634}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 3
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -152,24 +151,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
---- !u!65 &-3909046974736825146
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4714674720557699634}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1.8208148, z: 1}
-  m_Center: {x: 0, y: 0.08959404, z: 0}
